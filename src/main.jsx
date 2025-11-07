@@ -7,7 +7,6 @@ import './All.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Nav />
-     {/* <Contact />  */}
-
+    <Contact />
   </React.StrictMode>,
 )
