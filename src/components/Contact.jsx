@@ -25,6 +25,8 @@ const Contact = () => {
                 VIA EMAIL FORM
               </button>
             </div>
+            <h1 class="bg-*"></h1>
+            
 
             <div className="formcontent">
               <input type="text" name="Name" id="Name" placeholder="Name" />

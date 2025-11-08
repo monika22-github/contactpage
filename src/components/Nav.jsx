@@ -1,13 +1,16 @@
+import React from "react";  
+import {Link} from "react-router-dom";  
+
 const Nav = () => {
     return (
-        <div className="main text-center p-4 bg-gray-200">
-            <nav>
-                <a href="">CONTACT</a>
-                <a href="">ABOUT</a>
-                <a href="">HOME</a>
-            </nav>
-        </div>
-    );
-};
+        <nav >
+            <ul className="flex space-x-10" >
+                <li><Link to="/Resume">Resume </Link></li>
+                <li><Link to="/Projects">Projects</Link></li>
+                <li><Link to="/Contact">Contact</Link></li>
+            </ul>
+        </nav>
+    )
+}
 
 export default Nav;
