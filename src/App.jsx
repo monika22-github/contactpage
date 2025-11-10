@@ -1,62 +1,47 @@
 import { Route, Routes } from "react-router-dom";
-import Nav from "./components/Nav";
-import Resume from "./components/Resume";
+import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import React from "react";  
-import {Link} from "react-router-dom";  
-
-
-
-
-
-
-
+import Resume from "./components/Resume";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const App = () => {
+  return (
+    <div>
+      <span>
+      <ul>
+        <li>
+          
+            <Link to="/Home">
+              <b>Monika Verma </b>Learner
+            </Link>
+        
+        </li>
+      </ul></span>
 
-    return (
-        <div>
-            <nav>
-            <h1><b>Monika Verma </b>Learner</h1>
-                
-            <ul className="flex space-x-10" >
-                <li><Link to="/Resume">Resume </Link></li>
-                <li><Link to="/Projects">Projects</Link></li>
-                <li><Link to="/Contact">Contact</Link></li>
-            </ul>
-       
-            
-            
-<Routes>  
+      <nav >
+        <ul className="flex space-x-10 float-right justify text-lg p-5 m-5">
+          <li>
+            <Link to="/Resume">Resume </Link>
+          </li>
+          <li>
+            <Link to="/Projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/Contact">Contact</Link>
+          </li>
+        </ul>
 
-    <Route path="/Nav" element={<Nav />} />
-   <Route path="/Resume" element={<Resume />} />
-   <Route path="/Projects" element={<Projects />} />
-    <Route path="/Contact" element={<Contact />} />
+        <Routes>
+          <Route path="/Resume" element={<Resume />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </nav>
+    </div>
+  );
+};
 
-</Routes></nav>
-
-<Hero />
-</div>
-
-
-
-
-
-
-
-
-    )
-
-
-
-
-
-
-
-  }
-  
-  
-  export default App;
+export default App;
