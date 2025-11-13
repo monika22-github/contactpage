@@ -20,8 +20,8 @@ const App = () => {
         </li>
       </ul></span>
 
-      <nav >
-        <ul className="flex space-x-10 float-right justify text-lg p-5 m-5">
+      <nav className=" top-0 ">
+        <ul className="flex space-x-10 float-right justify text-lg  p-10 ">
           <li>
             <Link to="/Resume">Resume </Link>
           </li>
@@ -31,15 +31,16 @@ const App = () => {
           <li>
             <Link to="/Contact">Contact</Link>
           </li>
-        </ul>
+        </ul></nav>
+        <div className="mx-5">
 
         <Routes>
           <Route path="/Resume" element={<Resume />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
-        </Routes>
-      </nav>
+        </Routes></div>
+      
     </div>
   );
 };

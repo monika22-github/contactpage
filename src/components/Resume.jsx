@@ -1,12 +1,12 @@
 const Resume = () => {
   return (
-    <div>
+    <div className="p-20 my-20">
    
 
 
 
      <p className="font-bold text-5xl pt-30 mt-30">Resume</p>
-     <div className="flex space-x-10 mt-10 float-right">
+     <div className="grid grid-cols-3 space-x-10 mt-10 float-right">
       <h3 className=" font-bold text-2xl space-x-10">Work <br />Experience</h3>
 <p className="float-right ">2035 - Present</p>
       

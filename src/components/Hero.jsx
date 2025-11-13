@@ -2,13 +2,13 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="Hero mt-45 p-45 flex  space-x-10">
+    <div className="Hero  p-20 my-20 grid grid-cols-2  space-x-10">
       <img
-        className="w-full h-full rounded-full"
-        src="src\assets\girl.avif"
+        className="w-full h-[80dvh] object-cover rounded-full"
+        src="src\assets\girl2.jpeg"
         alt=""
       />
-      <div className="content">
+      <div className="content px-10">
         <h1 className="text-8xl font-bold">Hello</h1>
         <h2 className="text-2xl mt-10 font-bold">A Bit about me</h2>
         <p>
